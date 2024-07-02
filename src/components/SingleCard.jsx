@@ -57,7 +57,7 @@ const SingleCard = () => {
         </div>
       </div>
       <div className="mt-8">
-        <div className="grid grid-cols-2 lg:grid-cols-3 mx-auto text-center mt-20 gap-6 px-[20px]">
+        <div className="grid grid-cols-1 lg:grid-cols-3 mx-auto text-center mt-20 gap-6 px-[20px]">
           {relatedTopics.map((related) => (
             <div
               key={related._id}
