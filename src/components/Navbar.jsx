@@ -39,7 +39,7 @@ const Navbar = () => {
             name="relatedtopic"
             onChange={(e) => setTopic(e.target.value)}
             id="countries"
-            className=" border mx-4 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  dark:focus:ring-blue-500 "
+            className=" border mx-4 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  dark:focus:ring-blue-500 w-52"
           >
             <option value="">Choose a Topic</option>
             <option value="Nature">Nature</option>
