@@ -30,7 +30,7 @@ const SignupForm = () => {
     <>
       <div
         className="mt-12
-  mx-auto w-full max-w-md bg-white px-6 pt-10 pb-8 shadow-xl ring-1 ring-gray-900/5 sm:rounded-xl sm:px-10"
+  mx-auto w-full mx-4 max-w-md bg-white px-6 pt-10 pb-8 shadow-xl ring-1 ring-gray-900/5 sm:rounded-xl sm:px-10"
       >
         <div className="w-full">
           <div className="text-center">
