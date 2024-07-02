@@ -49,7 +49,7 @@ const Navbar = () => {
           </select>
           </p>
           </Link>
-          <nav className="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
+          <nav className="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center w-96">
             <Input label="Searh Blogs" onChange={(e) => setsearch(e.target.value)}/>
           </nav>
           <div>
