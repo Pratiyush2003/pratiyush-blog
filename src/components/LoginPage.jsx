@@ -8,7 +8,7 @@ const LoginPage = () => {
 
   const Loginhandle = async (e) => {
     e.preventDefault();
-    const res = await fetch('http://localhost:4000/api/auth/login', {
+    const res = await fetch('https://pratiyush-blog-backend.onrender.com/api/auth/login', {
       method : "POST",
       headers : {
         'Content-Type' : 'application/json'
