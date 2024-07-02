@@ -4,7 +4,7 @@ export const fetchallblog = createAsyncThunk(
   "fetchallblog",
   async (args, { rejectWithValue }) => {
     try {
-      const response = await fetch("http://localhost:4000/api/notes/fetchallblogs");
+      const response = await fetch("https://pratiyush-blog-backend.onrender.com/api/notes/fetchallblogs");
       const result = await response.json();
       return result;
     } catch (error) {
@@ -17,7 +17,7 @@ export const getAllblogs = createAsyncThunk(
   "getblogs",
   async (args, { rejectWithValue }) => {
     try {
-      const response = await fetch("http://localhost:4000/api/notes/fetchallnotes", {
+      const response = await fetch("https://pratiyush-blog-backend.onrender.com/api/notes/fetchallnotes", {
         method: "GET",
         headers: {
           'content-type': 'application/json',
@@ -36,7 +36,7 @@ export const createblog = createAsyncThunk(
   "createblog",
   async (data, { rejectWithValue }) => {
     try {
-      const response = await fetch("http://localhost:4000/api/notes/addnote", {
+      const response = await fetch("https://pratiyush-blog-backend.onrender.com/api/notes/addnote", {
         method: "POST",
         headers: {
           "Content-type": "application/json",
@@ -56,7 +56,7 @@ export const deleteblog = createAsyncThunk(
   "deleteUser",
   async (id, { rejectWithValue }) => {
     try {
-      const response = await fetch(`http://localhost:4000/api/notes/deletenote/${id}`, {
+      const response = await fetch(`https://pratiyush-blog-backend.onrender.com/api/notes/deletenote/${id}`, {
         method: "DELETE",
         headers: {
           'content-Type': 'application/json',
@@ -75,7 +75,7 @@ export const updateData = createAsyncThunk(
   "updateblog",
   async (data, { rejectWithValue }) => {
     try {
-      const response = await fetch(`http://localhost:4000/api/notes/updatenote/${data._id}`, {
+      const response = await fetch(`https://pratiyush-blog-backend.onrender.com/api/notes/updatenote/${data._id}`, {
         method: "PUT",
         headers: {
           'content-Type': 'application/json',
